@@ -1,4 +1,4 @@
-version="1.0.3"
+version="1.1-beta2"
 src_filename = "casperjs-#{version}"
 src_filepath = "#{Chef::Config['file_cache_path']}/#{src_filename}.tar.gz"
 install_path = "/usr/local/casperjs"
@@ -6,7 +6,7 @@ install_path = "/usr/local/casperjs"
 package "python"
 
 remote_file src_filepath do
-  source "https://github.com/n1k0/casperjs/tarball/#{version}"
+  source "https://github.com/n1k0/casperjs/archive/#{version}.tar.gz"
   action :create_if_missing
 end
 
