@@ -1,4 +1,4 @@
-version="1.1-beta2"
+version="1.1-beta3"
 src_filename = "casperjs-#{version}"
 src_filepath = "#{Chef::Config['file_cache_path']}/#{src_filename}.tar.gz"
 install_path = "/usr/local/casperjs"
